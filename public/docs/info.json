@@ -1,0 +1,23 @@
+{
+    "main": "start",
+    "cats": [
+        {
+            "id": "start",
+            "name": "Getting Started"
+        }
+    ],
+    "pages": [
+        {
+            "id": "start",
+            "name": "Getting Started",
+            "url": "start",
+            "cat": "start"
+        },
+        {
+            "id": "next",
+            "name": "Next Steps",
+            "url": "next",
+            "cat": "start"
+        }
+    ]
+}

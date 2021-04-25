@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css">
+    <link rel="preload" href="%PUBLIC_URL%/images/loader.svg" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
-    <title>Snowpack App</title>
-  </head>
-  <body>
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="A simple to use discord bot." />
+    <title>Craig Dashboard</title>
+</head>
+
+<body>
     <div id="root"></div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
+    <noscript>
+        <div>
+            <h1>Error!</h1>
+            <p>To use the Craig dashboard please enable JavaScript.</p>
+            <p><a href="https://www.enable-javascript.com/" style="
+        color: white;
+        background-color: #3b82f6;
+        padding: 5px;
+        border-radius: 10px;
+        text-decoration: none;
+    ">Click here for instructions.</a></p>
+        </div>
+    </noscript>
+    <script type="module" src="%PUBLIC_URL%/dist/index.js"></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -21,5 +39,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
