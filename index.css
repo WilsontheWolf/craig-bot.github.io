@@ -1,0 +1,53 @@
+body {
+    background-color: #282c34;
+    color: white;
+}
+
+.cmd-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+    grid-auto-flow: row dense;
+    place-items: center;
+}
+
+.guild-grid {
+    display: grid;
+    grid-template-areas: 'image name' 'image actions';
+    grid-gap: 1px;
+    float: left;
+    margin: 5px;
+}
+
+.guild-image {
+    grid-area: image;
+    width: 3rem;
+    display: flex;
+}
+
+.guild-name {
+    grid-area: name;
+    width: 11rem;
+}
+
+.guild-actions {
+    grid-area: actions;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 15px
+}
+
+::-webkit-scrollbar-track {
+    background: #202324;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6b6b6b;
+}
